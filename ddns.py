@@ -5,8 +5,8 @@ import os
 
 
 class DDNS:
-    def __init__(self, Id, Token):
-        self.login_token = str(Id) + "," + str(Token)
+    def __init__(self, api_id, api_token):
+        self.login_token = str(api_id) + "," + str(api_token)
         self.format = "json"
         self.lang = "cn"
         self.headers = {
